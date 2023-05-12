@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Math</p>
+<input type="number" id="a">
+<p>Physics</p>
+<input type="number" id="b">
+<p>Chemistry</p>
+<input type="number" id="c">
+<button onclick="tongdiemtrungbinh()">kết quả </button>
+<p id="ketqua"></p>
+<script>
+    function tongdiemtrungbinh() {
+        var Math = document.getElementById("a").value
+        var Physics = document.getElementById("b").value
+        var Chemistry = document.getElementById("c").value
+        var diemtrungbinh = (Math + Physics + Chemistry) / 3
+        document.getElementById("ketqua").innerHTML = 'điểm là' +diemtrungbinh
+
+    }
+
+</script>
+
+</body>
+
+</html>

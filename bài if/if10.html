@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="canh a">
+<input type="number" id="canh b">
+<button onclick="tinh()">Tính</button>
+<p id="ketqua"></p>
+<script>
+  function tinh(){
+    var a = document.getElementById('canh a').value
+    var b = document.getElementById('canh b').value
+    var dientich = a * b
+    document.getElementById("ketqua").innerHTML="diện tích hình chữ nhật là" +dientich
+  }
+</script>
+
+
+</body>
+</html>

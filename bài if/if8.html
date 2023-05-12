@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tính diện tích hình vuông</h1>
+<p>Nhập cạnh a:</p>
+<input type="number" id="canh-a">
+<button onclick="tinh()">Tính</button>
+<p id="ket-qua"></p>
+
+<script>
+  function tinh() {
+    var a = document.getElementById("canh-a").value;
+    var dienTich = a * a;
+    document.getElementById("ket-qua").innerHTML = "Diện tích hình vuông là: " + dienTich;
+  }
+</script>
+
+</body>
+</html>

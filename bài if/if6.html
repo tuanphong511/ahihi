@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="a">
+<button onclick="hoahong()">kết quả</button>
+<p id="b"></p>
+
+<script>
+function hoahong() {
+   let ketqua = 0
+    let a = document.getElementById('a').value
+    if (a <= 50){
+        ketqua = a * 0.05
+        document.getElementById('b').innerHTML="kết quả" +ketqua
+    }else if (a > 50 && a <= 100){
+        ketqua = a * 0.1
+        document.getElementById('b').innerHTML="kết quả" +ketqua
+    }else {
+        ketqua = a * 0.2
+        document.getElementById('b').innerHTML="kết quả" +ketqua
+    }
+
+}
+
+
+</script>
+
+</body>
+</html>

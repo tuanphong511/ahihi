@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-  <form action="https://www.facebook.com/profile.php?id=100086950615673"></form>
+
 </head>
 <body>
-
+<script>
+    let a = +prompt('Nhập điểm bắt đầu: ')
+    let b = +prompt('Nhập điểm kết thúc: ')
+    let count = 0
+    for(let i=a; i <= b; i++){
+        if (i%7 === 4){
+            count++
+        }
+    }
+    document.write(count)
+</script>
 </body>
 </html>

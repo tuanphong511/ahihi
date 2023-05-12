@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = [12, 23, 34, 45, 56, 67];
+  let sum = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {     // kiểm tra chữ số cuối cùng có phải là số chẵn hay không
+      sum += arr[i];            // cộng giá trị vào tổng
+    }
+  }
+
+  document.write("Tổng các số có chữ số cuối cùng là chẵn trong mảng là: " + sum);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Số tiền</p>
+<input type="text" id="a">
+<p>số tháng</p>
+<input type="text" id="b">
+<p>lãi suất</p>
+<input type="text" id="c">
+<button onclick="tinh()">tính</button>
+
+</body>
+<script>
+    function tinh() {
+        let sotien = +document.getElementById("a").value
+        let sothang = +document.getElementById("b").value
+        let laisuat = +document.getElementById("c").value
+        laisuat = laisuat / 12 / 100
+        for (let i = 1; i <= sothang; i++) {
+            sotien = sotien * laisuat + sotien
+        }
+        alert("số tiền bạn nhận đc là" + sotien)
+    }
+</script>
+</html>

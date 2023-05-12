@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let dem = 1
+  for (let x = 2 ; x < 1000 ; x++){
+    let ktSNT = 'là số SNT'
+    for (let i=2 ; i< x ; i++){ //kiểm tra x xem có phải là SNT ko
+      if (x % i === 0 ){ // nếu x chia hết cho i thì x ko phải snt
+        ktSNT = 'ko là SNT'
+        break
+      }
+    }
+    if (ktSNT === 'là số SNT'){
+      document.write(x+'<br>')
+      dem++
+    }
+    if(dem === 20){ //khi đủ 20 số thì dừng
+      break
+    }
+  }
+</script>
+
+</body>
+</html>

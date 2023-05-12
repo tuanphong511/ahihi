@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="giacuocnoimang">Giá cước gọi nội mạng (VND/phút): </label>
+<input type="text" id="giacuocnoimang"><br><br>
+
+<label for="giacuocngoaimang">Giá cước gọi ngoại mạng (VND/phút): </label>
+<input type="text" id="giacuocngoaimang"><br><br>
+
+<label for="sophutnoimang">Số phút gọi nội mạng: </label>
+<input type="text" id="sophutnoimang"><br><br>
+
+<label for="sophutngoaimang">Số phút gọi ngoại mạng: </label>
+<input type="text" id="sophutngoaimang"><br><br>
+
+<button type="button" onclick="tinhcuoc()">Tính cước</button><br><br>
+
+<label for="ketqua">Tổng cước điện thoại: </label>
+<input type="text" id="ketqua" readonly>
+</form>
+
+<script>
+    function tinhcuoc() {
+        var giacuocnoimang = parseFloat(document.getElementById("giacuocnoimang").value);
+        var giacuocngoaimang = parseFloat(document.getElementById("giacuocngoaimang").value);
+        var sophutnoimang = parseInt(document.getElementById("sophutnoimang").value);
+        var sophutngoaimang = parseInt(document.getElementById("sophutngoaimang").value);
+
+        var cuocgoinoimang = giacuocnoimang * sophutnoimang;
+        var cuocgoingoaimang = giacuocngoaimang * sophutngoaimang;
+        var tongcuoc = cuocgoinoimang + cuocgoingoaimang;
+
+        document.getElementById("ketqua").value = tongcuoc.toFixed(2) + " VND";
+    }
+</script>
+
+</body>
+</html>

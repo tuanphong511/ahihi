@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  let arr = [1, 2, 3, 4, 5];
+  let x = 3;
+  function trungbinh(arr, x) {
+    let sum = 0;
+    let count = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > x) {
+        sum += arr[i];
+        count++;
+      }
+    }
+
+    if (count === 0) {
+      return 0;
+    }
+
+    return sum / count;
+  }
+
+
+  let result = trungbinh(arr, x);
+  document.write(result);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = new Array(10);// hiện thị số phần tử cần nhập là 10
+  let b = new Array(10);
+  let c = new Array(20);
+
+  // Nhập giá trị cho mảng a
+  console.log("Nhập vào các phần tử của mảng a:");
+  for (let i = 0; i < 10; i++) {
+    a[i] = parseInt(prompt(`a[${i}] = `));// biến chuỗi thành số
+  }
+
+  // Nhập giá trị cho mảng b
+  console.log("Nhập vào các phần tử của mảng b:");
+  for (let i = 0; i < 10; i++) {
+    b[i] = parseInt(prompt(`b[${i}] = `));
+  }
+
+  // Gộp hai mảng a và b thành mảng c
+  let index = 0;
+  for (let i = 0; i < 10; i++) {
+    c[index++] = a[i];
+    c[index++] = b[i];
+  }
+
+  // Hiển thị mảng c
+  console.log("Mảng c sau khi gộp:");
+  for (let i = 0; i < 20; i++) {
+    console.log(`c[${i}] = ${c[i]}`);
+  }
+
+</script>
+
+</body>
+</html>

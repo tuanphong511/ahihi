@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let weight = parseInt(prompt("nhap can nang")); // đơn vị kilogram
+    let height = parseInt(prompt("nhap chieu cao")) // đơn vị mét
+
+    var bmi = weight / (height * height); // tính chỉ số BMI
+
+    if (bmi < 18.5) {
+        alert("Bạn bị suy dinh dưỡng");
+    } else if (bmi < 25) {
+        alert("Bạn có cân nặng bình thường");
+    } else if (bmi < 30) {
+        alert("Bạn đang bị thừa cân");
+    } else {
+        alert("Bạn đang bị béo phì");
+    }
+</script>
+
+</body>
+</html>

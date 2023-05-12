@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<input type="text" id="txt1">
+<input type="text" id="txt2">
+<br>
+<button onclick="tinhTong()">Addition(+)</button>
+<button onclick="tinhHieu()">Subtraction(-)</button>
+<button onclick="">Multiplication(X)</button>
+<button onclick="">Divison(/)</button>
+<h1 id="kq">Rs = </h1>
+<script>
+    function tinhTong() {
+        let st1 = +document.getElementById('txt1').value
+        let st2 = +document.getElementById('txt2').value
+        document.getElementById('kq').innerHTML = 'Tong la' + (st1 + st2)
+    }
+
+    function tinhHieu() {
+        let st1 = +document.getElementById('txt1').value
+        let st2 = +document.getElementById('txt2').value
+        document.getElementById('kq').innerHTML = 'Tong la' + (st1 - st2)
+    }
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

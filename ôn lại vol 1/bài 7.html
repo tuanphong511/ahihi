@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function check5K(number){
+    if(number === 1) {
+      return true;
+    }
+    while(number > 5){
+      if(number % 5 !== 0){
+        break;
+      }else{
+        number = number / 5;
+      }
+    }
+    if(number === 5){
+      return true;
+    }else{
+      return false;
+    }
+  }
+
+  let arr = [1,2,3,25,125,125 * 5, 10];
+  for(let i = 0; i < arr.length; i++){
+    if(check5K(arr[i]) === true){
+      document.write(arr[i] + "</br>")
+    }
+  }
+  //function getBaseLog(x, y) {
+    //return Math.log(y) / Math.log(x);
+  //}
+  //let arr=[1,2,3,4,25];
+  //for(i=0; i<arr.length; i++){
+    //let log5 = getBaseLog(5, arr[i]);
+    //if (log5 === Math.round(log5)) {
+      //console.log(arr[i])
+    //}
+  //}
+</script>
+
+</body>
+</html>

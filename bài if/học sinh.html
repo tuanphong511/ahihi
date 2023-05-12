@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="diem">
+<button onclick="tinh()">ket qua</button>
+<p id="b"></p>
+<script>
+    function tinh() {
+       let a = document.getElementById("diem").value
+        if (a < 5) {
+            document.getElementById("b").innerHTML="dốt"
+        }
+        if(a > 5 && a < 8) {
+            document.getElementById("b").innerHTML="khá"
+        }
+        if(a >= 8 ) {
+            document.getElementById("b").innerHTML="giỏi"
+        }
+    }
+</script>
+
+</body>
+</html>

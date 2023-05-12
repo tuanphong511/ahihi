@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="bankinh">bán kính</label>
+<input type="text" id="bankinh">
+<button onclick="tinhchuvi()" id="tinhchuvi">tính chu vi</button>
+<button onclick="tinhdientich()">tinh diện tích</button>
+<script>
+
+    function tinhchuvi(){
+        let bankinh = document.getElementById("bankinh").value
+        let tinhchuvi = 2 * 3.14 * bankinh
+        return tinhchuvi
+    }
+    document.getElementById("tinhchuvi").innerHTML = tinhchuvi
+
+</script>
+</body>
+</html>

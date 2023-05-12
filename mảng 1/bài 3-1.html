@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = [ 3,7,2,1,4,2,8,]
+  let tong = 0
+  let max = arr[0]
+  for ( i = 0 ; i < arr.length ; i++){
+    tong += arr[i]
+    if (arr[i] > max){
+      max = arr[i]
+    }
+  }
+  document.write('giá trị lơớn nhất là '+max+ 'giá trị trung bình là ;' +tong/arr.length)
+</script>
+
+</body>
+</html>

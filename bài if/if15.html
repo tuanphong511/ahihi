@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p>a</p>
+<input type="text" id="a">
+<p>b</p>
+<input type="text" id="b">
+<p>c</p>
+<input type="text" id="c">
+<button onclick="kiemtratamgiac()">kiểm tra</button>
+
+</body>
+<script>
+    function kiemtratamgiac() {
+        let a = +document.getElementById("a").value
+        let b = +document.getElementById("b").value
+        let c = +document.getElementById("c").value
+        if (a > 0 && b > 0 && c > 0){
+            if (a + b > c && b + c > a && a + c > b) {
+                alert("đây là các cạnh của tam giác")
+            }else alert("đây ko phải là các cạnh của tam giác")
+        }else{alert("đây ko phải là các cạnh của tam giác")}
+    }
+</script>
+</html>

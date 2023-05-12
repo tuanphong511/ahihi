@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>$</p>
+<input type="number" id="a">
+<p>VNĐ</p>
+
+<p id="ketqua"></p>
+<button onclick="tinh()">chuyển đổi</button>
+<script>
+    function tinh() {
+        var $ = document.getElementById("a").value
+        var VNĐ = $ * 23000
+        document.getElementById("ketqua").innerHTML="số tiền là" +VNĐ
+    }
+</script>
+
+</body>
+</html>

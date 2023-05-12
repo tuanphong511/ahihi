@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="hinhanh.jpg" id="g" style="left: 300px; position: relative; width: 100px;"/>
+<script>
+    let speedX = 10
+    setInterval(()=>{
+        document.getElementById('g').style.left = parseInt(document.getElementById('g').style.left) + speedX + 'px'
+        if (parseInt(document.getElementById('g').style.left) >= window.innerWidth|| parseInt(document.getElementById('g').style.left) <= 0) {
+        speedX = -speedX;
+        }
+
+    },10)
+
+
+
+
+</script>
+
+</body>
+</html>
